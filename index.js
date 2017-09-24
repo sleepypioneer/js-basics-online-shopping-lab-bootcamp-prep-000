@@ -42,7 +42,7 @@ function total() {
 function removeFromCart(item) {
   for ( let i = 0; i < cart.length; i++) {
     if (String(Object.keys(cart[i])) === item) {
-      delete cart[splice(i,1)]
+      cart.splice(i,1)
       return cart
     } else {
       var message = true;
