@@ -48,11 +48,7 @@ function removeFromCart(item) {
     if (String(Object.keys(cart[i])) === item) {
       cart.splice(i,1)
       return cart
-    } else {
-      var message = true;
-    }
-  }
-  if (message === true) {
+    } 
     console.log("That item is not in your cart.")
     return cart
   }
