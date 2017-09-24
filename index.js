@@ -48,10 +48,10 @@ function removeFromCart(item) {
     if (String(Object.keys(cart[i])) === item) {
       cart.splice(i,1)
       return cart
-    } 
+    }
+  }
     console.log("That item is not in your cart.")
     return cart
-  }
 }
 
 
