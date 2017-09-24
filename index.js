@@ -24,13 +24,9 @@ function viewCart() {
   } else if(cart.length === 2) {
       console.log("In your cart, you have " + Object.keys(cart[0]) + " at $" + cart[0][Object.keys(cart[0])] + " and " + Object.keys(cart[1]) + " at $" + cart[1][Object.keys(cart[1])] +  ".")
   } else {
-    var cartList = []
-    for (let i = 0; i < cart.length; i++){
+    for (let i = 0; i < cart.length-1; i++){
       cartList.push(" " + Object.keys(cart[i]) + " at $" + cart[i][Object.keys(cart[i])] + "," )
-    }
-    var a = cartList.slice(0, cartList.length-1);
-    var b = cartList.slice(cartList.length-1);
-    console.log("In your cart, you have " + a + " and " + b + ".")
+    console.log("In your cart, you have " +  + " and " + Object.keys(cart[i]) + " at $" + cart[i][Object.keys(cart[i])] + ".")
   }
 }
 
@@ -53,6 +49,7 @@ function removeFromCart(item) {
   }
   if (message) {
     console.log("That item is not in your cart.")
+    return cart
   }
 }
 
