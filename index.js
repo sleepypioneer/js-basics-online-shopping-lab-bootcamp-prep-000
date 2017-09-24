@@ -30,7 +30,7 @@ function viewCart() {
       cartList.push(" " + Object.keys(cart[i]) + " at $" + cart[i][Object.keys(cart[i])])
     }
     //console.log(cartList)
-    console.log("In your cart, you have" + cartList + " and " + Object.keys(cart[a]) + " at $" + cart[a][Object.keys(cart[a])] + ".")
+    console.log("In your cart, you have" + cartList + ", and " + Object.keys(cart[a]) + " at $" + cart[a][Object.keys(cart[a])] + ".")
 
   }
 }
